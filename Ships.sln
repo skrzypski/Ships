@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ships", "Ships\Ships.csproj", "{6AE0F797-C59E-4CA6-A057-96757B1884BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AE0F797-C59E-4CA6-A057-96757B1884BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE0F797-C59E-4CA6-A057-96757B1884BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE0F797-C59E-4CA6-A057-96757B1884BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE0F797-C59E-4CA6-A057-96757B1884BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE45E6D2-BAB2-47EC-A434-F1F3D775A755}
+	EndGlobalSection
+EndGlobal
