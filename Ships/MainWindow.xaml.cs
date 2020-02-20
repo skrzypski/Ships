@@ -23,6 +23,15 @@ namespace Ships
         public MainWindow()
         {
             InitializeComponent();
+            UpdateGrid(playerGrid);
+        }
+        private void UpdateGrid(Grid foo)
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                foo.RowDefinitions.Add(new RowDefinition());
+                foo.ColumnDefinitions.Add(new ColumnDefinition());
+            }
         }
     }
 }
