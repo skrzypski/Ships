@@ -20,13 +20,7 @@ namespace Ships
             {
                 while (!addShip(shipLength[i])) ;
             }
-            for(int i = 0; i < 10; ++i)
-            {
-                for(int j = 0; j < 10; ++j)
-                {
-                    if (board[i, j] == '1') board[i, j] = ' ';
-                }
-            }
+            completeBoard();
         }
 
         private int boolToInt(bool val)
@@ -34,7 +28,7 @@ namespace Ships
             return (val ? 1 : 0);
         }
 
-        private void completeBoard()
+        public void completeBoard()
         {
             for (int i = 0; i < 10; ++i)
             {
