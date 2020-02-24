@@ -20,7 +20,11 @@
             
         </Grid>        
         <Grid Grid.Column="2">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
         </Grid>
     </Grid>
 </Window>
