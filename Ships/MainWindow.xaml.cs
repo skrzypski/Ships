@@ -28,11 +28,7 @@ namespace Ships
         }
         private void UpdateGrid(Grid foo)
         {
-<<<<<<< HEAD
-            for (int i = 0; i < 10; i++)
-=======
             for(int i = 0; i < 10; i++)
->>>>>>> 31c37e3d20f166ec865f3e66dcc954e61dcde633
             {
                 foo.RowDefinitions.Add(new RowDefinition());
                 foo.ColumnDefinitions.Add(new ColumnDefinition());
