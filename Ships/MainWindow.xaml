@@ -13,18 +13,23 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Name="playerGrid">
             
         </Grid>        
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="1" Name="computerGrid">
             
         </Grid>        
+<<<<<<< HEAD
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+=======
+        <Grid Grid.Column="2" Name="panelGrid">
+            
+>>>>>>> 31c37e3d20f166ec865f3e66dcc954e61dcde633
         </Grid>
     </Grid>
 </Window>
