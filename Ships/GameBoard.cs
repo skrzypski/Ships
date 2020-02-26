@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Ships
 {
@@ -11,7 +12,8 @@ namespace Ships
         {
             board = new char[10, 10];
             shipLength = new int[]{ 4,3,3,2,2,2,1,1,1,1};
-            rnd = new Random();
+            int seed = Convert.ToInt32(Regex.Match(Guid.NewGuid().ToString(), @"\d+").Value);
+            rnd = new Random(seed^seed*seed-seed);
         }
 
         public void randomPlacement()
@@ -34,7 +36,7 @@ namespace Ships
             {
                 for (int j = 0; j < 10; ++j)
                 {
-                    if (board[i, j] != 'S') board[i, j] = '-';
+                    if (board[i, j] != 'S') board[i, j] = ' ';
                 }
             }
         }
