@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ships"
         mc:Ignorable="d"
-        Title="AboutWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="O programie" Height="240" Width="320">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="20" FontFamily="Comic Sans MS" FontWeight="UltraBold"
+                   VerticalAlignment="Center" HorizontalAlignment="Center">
+            GRA W STATKI XD
+        </TextBlock>
+        <TextBlock Grid.Row="1" FontSize="16" Margin="20 0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left">
+            Autor: Kacper Skrzypek
+        </TextBlock>
+        <TextBlock Grid.Row="2" FontSize="16" Margin="20 0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left">
+            Rok wydania: 2020
+        </TextBlock>
+        <TextBlock Grid.Row="3" FontSize="16" Margin="20 0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left">
+            Aktualna wersja: 0.1.0 DEMO
+        </TextBlock>
+        <TextBlock Grid.Row="4" FontSize="16" Margin="20 0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left">
+            Pełna wersja: kac.pek.3@hotmail.com
+        </TextBlock>
+        <TextBlock Grid.Row="5" FontSize="16" Margin="20 0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left">
+            Licencja: BEERWARE
+        </TextBlock>
     </Grid>
 </Window>
