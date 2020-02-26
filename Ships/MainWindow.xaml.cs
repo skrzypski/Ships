@@ -33,7 +33,8 @@ namespace Ships
 
         private void startBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            new GameWindow().Show();
+            this.Close();
         }
     }
 }
