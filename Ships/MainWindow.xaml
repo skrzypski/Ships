@@ -5,28 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ships"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280"
+        Title="GRA W STATKI XD ver 0.1.0" Height="640" Width="480"
         ResizeMode="NoResize">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Name="playerGrid">
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Name="titleTb" Text="GRA W STATKI XD"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="46" FontWeight="UltraBold" FontFamily="Comic Sans MS"/>
         </Grid>        
-        <Grid Grid.Column="1" Name="computerGrid">
-            
-        </Grid>        
-        <Grid Grid.Column="2">
+        <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Sposób rozmieszczenia statków gracza" FontSize="22" FontWeight="UltraLight"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <RadioButton Name="random" GroupName="placement" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True">
+                        Losowe
+                    </RadioButton>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <RadioButton Name="user" GroupName="placement" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
+                        Własne (pełna wersja)
+                    </RadioButton>
+                </Grid>
+            </Grid>
+        </Grid>        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="2" Name="panelGrid">
+            <TextBlock Grid.Row="0" Text="Wybór poziomu trudności" FontSize="22" FontWeight="UltraLight"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <RadioButton Name="easy" GroupName="diff" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True">
+                        Łatwy
+                    </RadioButton>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <RadioButton Name="medium" GroupName="diff" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
+                        Średni (pełna wersja)
+                    </RadioButton>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <RadioButton Name="hard" GroupName="diff" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
+                        Trudny (pełna wersja)
+                    </RadioButton>
+                </Grid>
             </Grid>
-        </Grid>
+        </Grid>        
+        <Grid Grid.Row="3">
+            <Button Margin="50 25" Name="startBtn" Click="startBtn_Click">
+                <TextBlock Text="START" FontSize="36" FontWeight="ExtraLight"
+                           FontStretch="UltraExpanded"/>
+            </Button>
+        </Grid>        
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="demoTb" Text="WERSJA DEMONSTRACYJNA!" Grid.Column="0"
+                       VerticalAlignment="Bottom" HorizontalAlignment="Left"
+                       Margin="5"
+                       FontSize="14" FontWeight="UltraBold"/>
+            <TextBlock Name="aboutTb" Text="O programie" Grid.Column="1"
+                       VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                       Margin="5" PreviewMouseDown="aboutTb_PreviewMouseDown"
+                       FontSize="14" FontWeight="UltraLight"
+                       Foreground="Blue" Cursor="Hand"/>
+        </Grid>        
     </Grid>
 </Window>
