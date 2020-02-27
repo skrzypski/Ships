@@ -17,7 +17,7 @@
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="48*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="Twoja plansza" FontSize="18"
+            <TextBlock Grid.Row="0" Text="Twoja plansza" FontSize="18" Name="yrBrd"
                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Grid Grid.Row="1" Name="playerBoard">
                 
@@ -28,7 +28,7 @@
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="48*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="Plansza komputera" FontSize="18"
+            <TextBlock Grid.Row="0" Text="Plansza komputera" FontSize="18" Name="cpBrd"
                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Grid Grid.Row="1" Name="computerBoard">
 
